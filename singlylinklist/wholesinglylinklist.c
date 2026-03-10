@@ -46,6 +46,7 @@ struct node * delbeg(struct node*head){
     head=head->next;
     free(temp);
     temp=NULL;
+    
     return head;
 }
 struct node *delend(struct node *head){

@@ -18,7 +18,12 @@ struct node*insertpos(struct node *head,int data,int pos){
     }
     newnode->next=ptr->next;
     newnode->prev=ptr;
+    if(ptr->next!=NULL){
+        ptr->next->prev=newnode;
+
+    }
     ptr->next=newnode;
+
     return head;
 
 }
