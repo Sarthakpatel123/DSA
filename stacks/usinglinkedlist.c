@@ -11,7 +11,6 @@ void push(int data){
     newnode->next=NULL;
     newnode->next=top;
     top=newnode;
-
 }
 int pop(){
     struct node * temp=top;
@@ -31,10 +30,9 @@ void display(){
     }
 }
 int main(){
-    push(50);
+    push(40);
     push(60);
     push(70);
     int val= pop();
     display();
-
 }
